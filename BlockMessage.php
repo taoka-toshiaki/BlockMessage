@@ -14,7 +14,7 @@ class BlockMessage
         $this->twitterConnection();
         $result = $this->getTwitterDM();
         if(!$this->judgmentSpam($result[0])){
-            $this->setTwitterBlockedUser($result[1],$result[2]);
+            $this->setTwitterBlockedUser($result[1]);
         }
     }
 
